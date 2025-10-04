@@ -18,3 +18,25 @@ export interface Review {
   comment: string;
   date: string;
 }
+
+export interface User {
+  name: string;
+  email: string;
+}
+
+export interface Sale {
+  id: string;
+  items: CartItem[];
+  date: string;
+  total: number;
+}
+
+export interface Address {
+  id: string;
+  name: string;
+  street: string;
+  city: string;
+  country: string;
+  googleMapsLink?: string;
+  isDefault?: boolean;
+}
